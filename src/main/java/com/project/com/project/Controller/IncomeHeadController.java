@@ -40,10 +40,21 @@ public class IncomeHeadController {
 
 
 
-    @DeleteMapping("/{id}")
-    public void deleteIncomeHead(@PathVariable Long id) {
+   @DeleteMapping("/{id}")
+public ResponseEntity<?> deleteIncomeHead(@PathVariable Long id) {
+    try {
+        // Attempt to delete the income head
         incomeHeadService.deleteIncomeHead(id);
+        return ResponseEntity.ok("Income Head deleted successfully");
+    } catch (Exception e) {
+        // Log the error (optional, but recommended for production environments)
+        e.printStackTrace();
+        
+        // Return an error response if the deletion failed
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("An error occurred while trying to delete the Income Head");
     }
+}
 
 
 
