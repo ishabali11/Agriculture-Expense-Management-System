@@ -5,5 +5,6 @@ public class Practice{
     private Long id;
 
     private String name;
+    private int quantity;
     
 }
