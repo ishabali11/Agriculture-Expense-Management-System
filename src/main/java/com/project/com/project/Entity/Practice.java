@@ -7,7 +7,6 @@ public class Practice{
     private String name;
     private int quantity;
 
-    private int price;
     
    
     
