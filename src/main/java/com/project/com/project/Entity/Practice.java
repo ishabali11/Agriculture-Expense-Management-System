@@ -8,6 +8,7 @@ public class Practice{
     private int quantity;
 
     private int price;
+    private int price2;
    
     
 
