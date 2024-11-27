@@ -11,6 +11,7 @@ public class Practice{
 
    
     private int price3;
+    private int price4;
    
 
     
