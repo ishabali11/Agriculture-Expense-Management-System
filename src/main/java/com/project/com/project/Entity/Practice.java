@@ -9,7 +9,8 @@ public class Practice{
 
     private int price;
 
-    private int price2;
+   
+    private int price3;
    
 
     
